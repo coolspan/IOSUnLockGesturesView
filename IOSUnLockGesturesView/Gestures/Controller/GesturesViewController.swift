@@ -9,10 +9,13 @@
 import UIKit
 
 class GesturesViewController: UIViewController {
+    
+    var gesturesView: GesturesView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initSubviews()
         
     }
     
@@ -21,4 +24,13 @@ class GesturesViewController: UIViewController {
 // MARK: - private methods
 extension GesturesViewController {
     
+    func initSubviews() {
+        view.backgroundColor = UIColor.white
+        
+        let width = UIScreen.main.bounds.width - 64 * 2
+        gesturesView = GesturesView(frame: CGRect(x: 64, y: UIScreen.main.bounds.height - width - 128, width: width, height: width))
+//        gesturesView.backgroundColor = UIColor.green
+        self.view.addSubview(gesturesView)
+        
+    }
 }

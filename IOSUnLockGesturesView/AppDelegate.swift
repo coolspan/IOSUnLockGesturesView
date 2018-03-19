@@ -10,25 +10,26 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         initMainViewController()
         
         return true
     }
-
+    
 }
 
-extension AppDelegate {
+// MARK: - private methods
+private extension AppDelegate {
     
     func initMainViewController() -> Void {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        let navigationVC = UINavigationController.init(rootViewController: RadarViewController())
+        let navigationVC = UINavigationController.init(rootViewController: HomeViewController())
         navigationVC.setNavigationBarHidden(true, animated: true)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
