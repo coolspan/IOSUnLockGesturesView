@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26ED330ED6C6B57BDCD9644F /* Pods_IOSUnLockGesturesView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04DAEB2CD0B61DF4FFD038E /* Pods_IOSUnLockGesturesView.framework */; };
+		E30EC177205F581B00B1B35D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC176205F581B00B1B35D /* AppDelegate.swift */; };
+		E30EC179205F582400B1B35D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30EC178205F582400B1B35D /* Assets.xcassets */; };
+		E30EC17C205F582D00B1B35D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30EC17A205F582D00B1B35D /* Info.plist */; };
+		E30EC17D205F582D00B1B35D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC17B205F582D00B1B35D /* ViewController.swift */; };
+		E30EC182205F583400B1B35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30EC17E205F583400B1B35D /* LaunchScreen.storyboard */; };
+		E30EC183205F583400B1B35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30EC180205F583400B1B35D /* Main.storyboard */; };
+		E30EC186205F58AB00B1B35D /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC185205F58AB00B1B35D /* GesturesViewController.swift */; };
+		E30EC18A205F59B200B1B35D /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC189205F59B200B1B35D /* PointView.swift */; };
+		E30EC18C205F59CB00B1B35D /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC18B205F59CB00B1B35D /* GesturesView.swift */; };
+		E30EC18E205F5B6300B1B35D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC18D205F5B6300B1B35D /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04C53B2A2B59D064ED1041FA /* Pods-IOSUnLockGesturesView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSUnLockGesturesView.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView.release.xcconfig"; sourceTree = "<group>"; };
+		557C0123CD18AEA1F4167613 /* Pods-IOSUnLockGesturesView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSUnLockGesturesView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView.debug.xcconfig"; sourceTree = "<group>"; };
+		A04DAEB2CD0B61DF4FFD038E /* Pods_IOSUnLockGesturesView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSUnLockGesturesView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30EC15F205F577700B1B35D /* IOSUnLockGesturesView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUnLockGesturesView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30EC175205F581B00B1B35D /* IOSUnLockGesturesView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSUnLockGesturesView-Bridging-Header.h"; sourceTree = "<group>"; };
+		E30EC176205F581B00B1B35D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = IOSUnLockGesturesView/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E30EC178205F582400B1B35D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IOSUnLockGesturesView/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		E30EC17A205F582D00B1B35D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IOSUnLockGesturesView/Info.plist; sourceTree = SOURCE_ROOT; };
+		E30EC17B205F582D00B1B35D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = IOSUnLockGesturesView/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		E30EC17F205F583400B1B35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IOSUnLockGesturesView/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		E30EC181205F583400B1B35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IOSUnLockGesturesView/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		E30EC185205F58AB00B1B35D /* GesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
+		E30EC189205F59B200B1B35D /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		E30EC18B205F59CB00B1B35D /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
+		E30EC18D205F5B6300B1B35D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E30EC15C205F577700B1B35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ED330ED6C6B57BDCD9644F /* Pods_IOSUnLockGesturesView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1FA6AF0155572BA49AF2810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04DAEB2CD0B61DF4FFD038E /* Pods_IOSUnLockGesturesView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF89F6D4CE0928C94825C54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				557C0123CD18AEA1F4167613 /* Pods-IOSUnLockGesturesView.debug.xcconfig */,
+				04C53B2A2B59D064ED1041FA /* Pods-IOSUnLockGesturesView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E30EC156205F577700B1B35D = {
+			isa = PBXGroup;
+			children = (
+				E30EC161205F577700B1B35D /* IOSUnLockGesturesView */,
+				E30EC160205F577700B1B35D /* Products */,
+				DFF89F6D4CE0928C94825C54 /* Pods */,
+				A1FA6AF0155572BA49AF2810 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E30EC160205F577700B1B35D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC15F205F577700B1B35D /* IOSUnLockGesturesView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E30EC161205F577700B1B35D /* IOSUnLockGesturesView */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC174205F580200B1B35D /* App */,
+				E30EC184205F588500B1B35D /* Gestures */,
+			);
+			path = IOSUnLockGesturesView;
+			sourceTree = "<group>";
+		};
+		E30EC174205F580200B1B35D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC176205F581B00B1B35D /* AppDelegate.swift */,
+				E30EC178205F582400B1B35D /* Assets.xcassets */,
+				E30EC17A205F582D00B1B35D /* Info.plist */,
+				E30EC175205F581B00B1B35D /* IOSUnLockGesturesView-Bridging-Header.h */,
+				E30EC17B205F582D00B1B35D /* ViewController.swift */,
+				E30EC17E205F583400B1B35D /* LaunchScreen.storyboard */,
+				E30EC180205F583400B1B35D /* Main.storyboard */,
+				E30EC18D205F5B6300B1B35D /* HomeViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E30EC184205F588500B1B35D /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC188205F592C00B1B35D /* View */,
+				E30EC187205F592600B1B35D /* Controller */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		E30EC187205F592600B1B35D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC185205F58AB00B1B35D /* GesturesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E30EC188205F592C00B1B35D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E30EC189205F59B200B1B35D /* PointView.swift */,
+				E30EC18B205F59CB00B1B35D /* GesturesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E30EC15E205F577700B1B35D /* IOSUnLockGesturesView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E30EC171205F577700B1B35D /* Build configuration list for PBXNativeTarget "IOSUnLockGesturesView" */;
+			buildPhases = (
+				177674631AF454A71E7A87B4 /* [CP] Check Pods Manifest.lock */,
+				E30EC15B205F577700B1B35D /* Sources */,
+				E30EC15C205F577700B1B35D /* Frameworks */,
+				E30EC15D205F577700B1B35D /* Resources */,
+				6DAFFA468687B3F461F73771 /* [CP] Embed Pods Frameworks */,
+				2D0BE8D7A9061A9AC1625C71 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSUnLockGesturesView;
+			productName = IOSUnLockGesturesView;
+			productReference = E30EC15F205F577700B1B35D /* IOSUnLockGesturesView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E30EC157205F577700B1B35D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = coolspan;
+				TargetAttributes = {
+					E30EC15E205F577700B1B35D = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E30EC15A205F577700B1B35D /* Build configuration list for PBXProject "IOSUnLockGesturesView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E30EC156205F577700B1B35D;
+			productRefGroup = E30EC160205F577700B1B35D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E30EC15E205F577700B1B35D /* IOSUnLockGesturesView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E30EC15D205F577700B1B35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30EC182205F583400B1B35D /* LaunchScreen.storyboard in Resources */,
+				E30EC17C205F582D00B1B35D /* Info.plist in Resources */,
+				E30EC179205F582400B1B35D /* Assets.xcassets in Resources */,
+				E30EC183205F583400B1B35D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		177674631AF454A71E7A87B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSUnLockGesturesView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D0BE8D7A9061A9AC1625C71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAFFA468687B3F461F73771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E30EC15B205F577700B1B35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30EC17D205F582D00B1B35D /* ViewController.swift in Sources */,
+				E30EC18C205F59CB00B1B35D /* GesturesView.swift in Sources */,
+				E30EC177205F581B00B1B35D /* AppDelegate.swift in Sources */,
+				E30EC186205F58AB00B1B35D /* GesturesViewController.swift in Sources */,
+				E30EC18A205F59B200B1B35D /* PointView.swift in Sources */,
+				E30EC18E205F5B6300B1B35D /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E30EC17E205F583400B1B35D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E30EC17F205F583400B1B35D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E30EC180205F583400B1B35D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E30EC181205F583400B1B35D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E30EC16F205F577700B1B35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E30EC170205F577700B1B35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E30EC172205F577700B1B35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557C0123CD18AEA1F4167613 /* Pods-IOSUnLockGesturesView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NX95T8E47;
+				INFOPLIST_FILE = IOSUnLockGesturesView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolspan.IOSUnLockGesturesView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSUnLockGesturesView/App/IOSUnLockGesturesView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E30EC173205F577700B1B35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C53B2A2B59D064ED1041FA /* Pods-IOSUnLockGesturesView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NX95T8E47;
+				INFOPLIST_FILE = IOSUnLockGesturesView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolspan.IOSUnLockGesturesView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSUnLockGesturesView/App/IOSUnLockGesturesView-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E30EC15A205F577700B1B35D /* Build configuration list for PBXProject "IOSUnLockGesturesView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30EC16F205F577700B1B35D /* Debug */,
+				E30EC170205F577700B1B35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E30EC171205F577700B1B35D /* Build configuration list for PBXNativeTarget "IOSUnLockGesturesView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30EC172205F577700B1B35D /* Debug */,
+				E30EC173205F577700B1B35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E30EC157205F577700B1B35D /* Project object */;
+}
