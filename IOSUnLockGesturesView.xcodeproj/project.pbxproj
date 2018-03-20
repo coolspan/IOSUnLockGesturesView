@@ -18,6 +18,7 @@
 		E30EC18A205F59B200B1B35D /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC189205F59B200B1B35D /* PointView.swift */; };
 		E30EC18C205F59CB00B1B35D /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC18B205F59CB00B1B35D /* GesturesView.swift */; };
 		E30EC18E205F5B6300B1B35D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC18D205F5B6300B1B35D /* HomeViewController.swift */; };
+		E30EC1922060BCFF00B1B35D /* SmartNinePointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30EC1912060BCFF00B1B35D /* SmartNinePointView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E30EC189205F59B200B1B35D /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
 		E30EC18B205F59CB00B1B35D /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 		E30EC18D205F5B6300B1B35D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E30EC1912060BCFF00B1B35D /* SmartNinePointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartNinePointView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				E30EC189205F59B200B1B35D /* PointView.swift */,
 				E30EC18B205F59CB00B1B35D /* GesturesView.swift */,
+				E30EC1912060BCFF00B1B35D /* SmartNinePointView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,10 +251,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IOSUnLockGesturesView/Pods-IOSUnLockGesturesView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LCProgressHUD/LCProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +275,7 @@
 			files = (
 				E30EC17D205F582D00B1B35D /* ViewController.swift in Sources */,
 				E30EC18C205F59CB00B1B35D /* GesturesView.swift in Sources */,
+				E30EC1922060BCFF00B1B35D /* SmartNinePointView.swift in Sources */,
 				E30EC177205F581B00B1B35D /* AppDelegate.swift in Sources */,
 				E30EC186205F58AB00B1B35D /* GesturesViewController.swift in Sources */,
 				E30EC18A205F59B200B1B35D /* PointView.swift in Sources */,
