@@ -27,7 +27,6 @@ class SmartNinePointView: UIView {
 private extension SmartNinePointView {
     
     func initSubviews() {
-        print("frame:\(frame)")
         pointsLayer = [CAShapeLayer]()
         let drawWidth: CGFloat = min(frame.size.width, frame.size.height)
         let dotWidth: CGFloat = 8
@@ -53,7 +52,6 @@ extension SmartNinePointView {
     func update(keyword: String) {
         for key in keyword {
             let num: Int = key.toInt() - 48
-            print("num:\(num)")
             if num >= 0 && num < pointsLayer.count {
                 let dotLayer = pointsLayer[num]
                 dotLayer.backgroundColor = UIColor.init(red: 22 / 255, green: 178 / 255, blue: 253 / 255, alpha: 1).cgColor

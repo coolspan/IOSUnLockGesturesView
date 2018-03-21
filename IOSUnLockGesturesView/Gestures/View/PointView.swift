@@ -10,20 +10,20 @@ import UIKit
 
 class PointView: UIView {
     
-    private var blackLayer: CAShapeLayer!
-    private var outLayer: CAShapeLayer!
+    private var borderLayer: CAShapeLayer!
     private var centerDotLayer: CAShapeLayer!
-    private var whiteLayer: CAShapeLayer!
+    private var whiteShadowLayer: CAShapeLayer!
     
     var ID: Int!
+    
     var isSelected: Bool = false {
         didSet {
             if isSelected {
                 centerDotLayer.isHidden = false
-                outLayer.strokeColor = UIColor.init(red: 59 / 255, green: 141 / 255, blue: 178 / 255, alpha: 1).cgColor
+                borderLayer.strokeColor = UIColor.init(red: 59 / 255, green: 141 / 255, blue: 178 / 255, alpha: 1).cgColor
             } else {
                 centerDotLayer.isHidden = true
-                outLayer.strokeColor = UIColor.init(red: 83 / 255, green: 86 / 255, blue: 89 / 255, alpha: 1).cgColor
+                borderLayer.strokeColor = UIColor.init(red: 83 / 255, green: 86 / 255, blue: 89 / 255, alpha: 1).cgColor
             }
         }
     }
@@ -48,7 +48,6 @@ class PointView: UIView {
         }
     }
     
-    
     init(frame: CGRect, id: Int) {
         super.init(frame: frame)
         self.ID = id
@@ -65,11 +64,9 @@ class PointView: UIView {
 private extension PointView {
     
     func initSubviews(frame: CGRect) -> Void {
-//        print("PointView:\(frame)")
-        
-        addUnSelectedOutLayer()
+        addBorderLayer()
+        addWhiteShadowLayer()
         addCenterDotLayer()
-        
     }
     
     func addCenterDotLayer() {
@@ -82,32 +79,29 @@ private extension PointView {
         centerDotLayer.strokeColor = UIColor.init(red: 17 / 255, green: 18 / 255, blue: 19 / 255, alpha: 1).cgColor
         centerDotLayer.lineWidth = 2.5
         centerDotLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-        layer.insertSublayer(centerDotLayer, above: whiteLayer)
-        
+        layer.insertSublayer(centerDotLayer, above: whiteShadowLayer)
     }
     
-    func addUnSelectedOutLayer() {
-        outLayer = CAShapeLayer()
+    func addBorderLayer() {
+        borderLayer = CAShapeLayer()
         let path = UIBezierPath.init(arcCenter: CGPoint(x: frame.size.width / 2, y: frame.size.height / 2), radius: (frame.size.width - 2.5) / 2, startAngle: 0, endAngle: CGFloat(2 * Double.pi), clockwise: false)
-        outLayer.path = path.cgPath
-        outLayer.backgroundColor = UIColor.clear.cgColor
-        outLayer.fillColor = UIColor.clear.cgColor
-        outLayer.strokeColor = UIColor.init(red: 83 / 255, green: 86 / 255, blue: 89 / 255, alpha: 0.5).cgColor
-        outLayer.lineWidth = 2.5
-        outLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-//        layer.insertSublayer(outLayer, at: 0)
-        layer.addSublayer(outLayer)
-        addWhiteAlphaBg()
+        borderLayer.path = path.cgPath
+        borderLayer.backgroundColor = UIColor.clear.cgColor
+        borderLayer.fillColor = UIColor.clear.cgColor
+        borderLayer.strokeColor = UIColor.init(red: 83 / 255, green: 86 / 255, blue: 89 / 255, alpha: 0.5).cgColor
+        borderLayer.lineWidth = 2.5
+        borderLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        layer.addSublayer(borderLayer)
     }
     
-    func addWhiteAlphaBg() -> Void {
-        whiteLayer = CAShapeLayer()
+    func addWhiteShadowLayer() -> Void {
+        whiteShadowLayer = CAShapeLayer()
         let path = UIBezierPath.init(arcCenter: CGPoint(x: frame.size.width / 2, y: frame.size.height / 2), radius: (frame.size.width - 7.5) / 2, startAngle: 0, endAngle: CGFloat(2 * Double.pi), clockwise: false)
-        whiteLayer.path = path.cgPath
-        whiteLayer.backgroundColor = UIColor.clear.cgColor
-        whiteLayer.fillColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.1).cgColor
-        whiteLayer.strokeColor = UIColor.clear.cgColor
-        whiteLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-        layer.addSublayer(whiteLayer)
+        whiteShadowLayer.path = path.cgPath
+        whiteShadowLayer.backgroundColor = UIColor.clear.cgColor
+        whiteShadowLayer.fillColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.1).cgColor
+        whiteShadowLayer.strokeColor = UIColor.clear.cgColor
+        whiteShadowLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        layer.addSublayer(whiteShadowLayer)
     }
 }

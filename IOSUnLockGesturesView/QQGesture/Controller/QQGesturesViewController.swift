@@ -1,17 +1,17 @@
 //
-//  GesturesViewController.swift
+//  QQGesturesViewController.swift
 //  IOSUnLockGesturesView
 //
-//  Created by 乔晓松 on 2018/3/19.
+//  Created by 乔晓松 on 2018/3/21.
 //  Copyright © 2018年 coolspan. All rights reserved.
 //
 
 import UIKit
 import LCProgressHUD
 
-class GesturesViewController: UIViewController {
-    
-    var gesturesView: GesturesView!
+class QQGesturesViewController: UIViewController {
+
+    var gesturesView: QQGesturesView!
     var ninePointView: SmartNinePointView!
     let titleLabel = UILabel()
     
@@ -29,19 +29,13 @@ class GesturesViewController: UIViewController {
 }
 
 // MARK: - private methods
-extension GesturesViewController {
+extension QQGesturesViewController {
     
     func initSubviews() {
-        view.backgroundColor = UIColor.init(red: 17 / 255, green: 18 / 255, blue: 19 / 255, alpha: 1)
-        let whiteView = UIView()
-        whiteView.backgroundColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.1)
-        view.addSubview(whiteView)
-        whiteView.snp.makeConstraints { (make) in
-            make.width.height.left.top.equalToSuperview()
-        }
+        view.backgroundColor = UIColor.init(red: 245 / 255, green: 245 / 255, blue: 248 / 255, alpha: 1)
         
         let width: CGFloat = UIScreen.main.bounds.width - 64 * 2
-        gesturesView = GesturesView(frame: CGRect(x: 64, y: (UIScreen.main.bounds.height - width) / 2, width: width, height: width + 100))
+        gesturesView = QQGesturesView(frame: CGRect(x: 64, y: (UIScreen.main.bounds.height - width) / 2, width: width, height: width + 100))
         gesturesView.isSettingGestures = isSettingGestures
         
         if isSettingGestures {
@@ -105,7 +99,7 @@ extension GesturesViewController {
         ninePointView = SmartNinePointView(frame: CGRect(x: CGFloat((UIScreen.main.bounds.width - 40) / 2), y: CGFloat(((UIScreen.main.bounds.height - width) / 2) - 120), width: 40, height: 40))
         self.view.addSubview(ninePointView)
         
-        titleLabel.textColor = UIColor.white
+        titleLabel.textColor = UIColor.black
         self.view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()

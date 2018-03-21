@@ -7,9 +7,8 @@
 
 ## 项目效果图
 
-<img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/001.PNG" width="240px" height="427px" /><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/002.PNG" width="33%"/><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/003.PNG" width="33%"/>
-<img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/004.PNG" width="33%"/>
-<img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/005.PNG" width="33%"/>
+<img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/001.PNG"  width="240px" height="427px" /><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/002.PNG"  width="240px" height="427px"/><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/003.PNG"  width="240px" height="427px"/>
+<img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/004.PNG"  width="240px" height="427px"/><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/005.PNG"  width="240px" height="427px""/><img src="https://github.com/coolspan/IOSUnLockGesturesView/blob/master/Screenshots/006.PNG"  width="240px" height="427px""/>
 
 
 
